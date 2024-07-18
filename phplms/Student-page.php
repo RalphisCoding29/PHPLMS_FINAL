@@ -29,7 +29,9 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id =
 
         <div class="side-nav">
             <div class="user">
-                <img src="images/Untitled1.png" class="user-img">
+                    <div class="upload">
+               <img src="img/<?php echo $user['image']; ?>" id="image" class="user-img">
+               </div>
                 <div>
                     <p>USER</p>
                 </div>
