@@ -241,7 +241,7 @@ background-color: rgb(218, 212, 212);
 display: flex;
 justify-content: space-between;
 flex-direction: column;
-transition: width 0.5s;
+transition: width 0.3s;
 }
 .user div{
 display: none;
