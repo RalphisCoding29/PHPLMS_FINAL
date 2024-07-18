@@ -23,14 +23,13 @@
             <div class="user">
                 <img src="images/Untitled2.png" class="user-img">
                 <div>
-                    <h2>Random</h2>
                     <p>ADMIN</p>
                 </div>
                 <img src="images/star.png" class="star-img">
             </div>
             <ul>
                <li><img src="images/dashboard.png"><a href="Admins-page.php">Home</li>
-                <li><img src="images/reports.png"><a href="#">Profile</a></li>
+                <li><img src="images/reports.png"><a href="profindex.php">Profile</a></li>
                 <li><img src="images/messages.png"><a href="tempfeedback/mainpage.php">Feedback</a></li>
                 <li><img src="images/projects.png"><a href="#">About</a></li>
                 <li><img src="images/members.png"><a href="Discussions-page.php">Discussions</a></li>
