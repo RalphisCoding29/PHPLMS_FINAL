@@ -1,6 +1,13 @@
 <?php 
   include "libri_dbcon.php";
 ?>
+<?php
+require 'config.php';
+
+$_SESSION["id"] = 1;
+$sessionId = $_SESSION["id"];
+$user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id = $sessionId"));
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +28,9 @@
 
         <div class="side-nav">
             <div class="user">
-                <img src="images/Untitled2.png" class="user-img">
+                    <div class="upload">
+               <img src="img/<?php echo $user['image']; ?>" id="image" class="user-img">
+               </div>
                 <div>
                     <p>ADMIN</p>
                 </div>
