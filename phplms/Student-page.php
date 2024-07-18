@@ -24,7 +24,6 @@
             <div class="user">
                 <img src="images/Untitled1.png" class="user-img">
                 <div>
-                    <h2>Random</h2>
                     <p>USER</p>
                 </div>
                 <img src="images/star.png" class="star-img">
