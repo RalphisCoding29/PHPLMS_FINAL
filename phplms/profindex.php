@@ -16,6 +16,10 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id =
     <link rel="stylesheet" href="profindex.css">
 </head>
 <style media = "screen">
+    *{
+        background-color: #B89869;
+    }
+    
     .upload{
         width: 500px;
         position: relative;
