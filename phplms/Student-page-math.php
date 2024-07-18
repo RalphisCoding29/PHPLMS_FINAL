@@ -79,7 +79,10 @@ include "libri_dbcon.php";
             <div class="words">
             <h6>LIBRI</h6>
             <h4>explore, learn, succeed.</h4>
-            <input type="text" placeholder="Enter book title" class="searchbar" size="70px">
+            <form action="search.php" method="post">
+                    <input type="search" name="searchKey">
+                    <input type="submit" name="search" value="Search">
+            </form>
 
         </div>
          </div>
