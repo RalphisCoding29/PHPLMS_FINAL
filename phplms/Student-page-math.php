@@ -22,7 +22,7 @@ include "libri_dbcon.php";
 
         <div class="side-nav">
             <div class="user">
-                <img src="images/Untitled1.png" class="user-img">
+                <img src="" class="user-img">
                 <div>
                     <p>USER</p>
                 </div>
