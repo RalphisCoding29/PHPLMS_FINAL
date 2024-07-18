@@ -17,7 +17,7 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id =
 </head>
 <style media = "screen">
     .upload{
-        width: 140px;
+        width: 500px;
         position: relative;
         margin: auto;
         text-align: center;
@@ -25,8 +25,8 @@ $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id =
     .upload img{
         border-radius: 50%;
         border: 8px solid #DCDCDC;
-        width: 125px;
-        height: 125px;
+        width: 500px;
+        height: 500px;
     }
     .upload .rightRound{
         position: absolute;
