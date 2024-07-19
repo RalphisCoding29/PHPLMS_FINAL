@@ -1,6 +1,13 @@
 <?php 
 include "libri_dbcon.php";
 ?>
+<?php
+require 'config.php';
+
+$_SESSION["id"] = 1;
+$sessionId = $_SESSION["id"];
+$user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tb_user WHERE id = $sessionId"));
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +29,9 @@ include "libri_dbcon.php";
 
         <div class="side-nav">
             <div class="user">
+                <div class="upload">
+               <img src="img/<?php echo $user['image']; ?>" id="image" class="user-img">
+               </div>
                 <img src="" class="user-img">
                 <div>
                     <p>USER</p>
@@ -31,7 +41,7 @@ include "libri_dbcon.php";
             <ul>
                 <li><img src="images/dashboard.png"><a href="Student-page.php">Home</li>
                 <li><img src="images/reports.png"><a href="profindex.php">Profile</a></li>
-                <li><img src="images/messages.png"><a href="#">Feedback</a></li>
+                <li><img src="images/messages.png"><a href="tempfeedback/feedbackmainpage.php">Feedback</a></li>
                 <li><img src="images/projects.png"><a href="#">About</a></li>
                 <li><img src="images/members.png"><button onclick = "hideShow()">Discussions</button></a></li>
                 <li><img src="images/setting.png"><a href="#">Settings</a></li>
