@@ -78,14 +78,14 @@ ul{
 	 
 	background-size: auto;
 	background-attachment: fixed;
-	background-color: #9e825a !important;
+	background-color: #3f3f41 !important;
 }
 .wrap {
     padding: 2.3em;
     width: 37%;
     margin: 2em auto;
     background: rgba(1, 14, 21, 0.62);
-	border-color: #d2ad79;
+	border-color: #3f3f41;
 	border-style: solid 5px;
 }
 h1.agile_head {
